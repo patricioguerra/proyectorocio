@@ -18,7 +18,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // styles
 import "bootstrap/scss/bootstrap.scss";
@@ -37,7 +37,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/" render={(props) => <Index {...props} />} />
       <Route
         path="/narrativa"
         render={(props) => <Narrativa {...props} />}
@@ -54,7 +54,6 @@ root.render(
         path="/retos"
         render={(props) => <RegisterPage {...props} />}
       />
-      <Redirect to="/index" />
     </Switch>
   </BrowserRouter>
 );
