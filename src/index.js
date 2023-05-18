@@ -54,7 +54,6 @@ root.render(
         path="/retos"
         render={(props) => <RegisterPage {...props} />}
       />
-      <Redirect to="/index" />
     </Switch>
   </BrowserRouter>
 );
