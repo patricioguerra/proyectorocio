@@ -15,27 +15,7 @@ import Recompensas from "views/vistasRocio/recompensas";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-    <Switch>
-      <Route path="/" render={(props) => <Index {...props} />} />
-      <Route
-        path="/narrativa"
-        render={(props) => <Narrativa {...props} />}
-      />
-      <Route
-        path="/niveles"
-        render={(props) => <Niveles {...props} />}
-      />
-      <Route
-        path="/recompensas"
-        render={(props) => <Recompensas {...props} />}
-      />
-      <Route
-        path="/retos"
-        render={(props) => <RegisterPage {...props} />}
-      />
-    </Switch>
-  </BrowserRouter>
+    holaaaa
     </div>
   );
 }
